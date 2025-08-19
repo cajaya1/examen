@@ -9,10 +9,6 @@
   "bugs": {
     "url": "https://github.com/cajaya1/pruebas/issues"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cajaya1/pruebas.git"
-  },
   "license": "ISC",
   "author": "cajaya1",
   "type": "module",
@@ -21,12 +17,14 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "lint": "npx eslint .",
-    "start": "node index.js"
+    "start": "node index.html"
   },
   "devDependencies": {
+    "@eslint/js": "^9.33.0",
     "eslint": "^9.33.0",
+    "globals": "^16.3.0",
     "jest": "^30.0.5"
   },
   "dependencies": {
@@ -104,7 +102,6 @@
     "get-stream": "^6.0.1",
     "glob": "^10.4.5",
     "glob-parent": "^6.0.2",
-    "globals": "^14.0.0",
     "graceful-fs": "^4.2.11",
     "has-flag": "^4.0.0",
     "html-escaper": "^2.0.2",
